@@ -1,0 +1,13 @@
+{% extends 'index.html %'}
+
+<ol>
+        {% for name in Fave_food %}
+                {% if name == 'Caribbean' %}
+                    <li><strong> My top 5 favorite food is {{name}} and the rest are:</strong> </li>
+                {% else %}
+                    <li> {{name}} </li>
+
+                {% endif %}
+
+        {% endfor %}
+</ol>
