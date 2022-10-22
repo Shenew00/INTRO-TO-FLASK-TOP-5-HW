@@ -9,22 +9,15 @@
 </head>
 <body>
    <h1 style="text-align:center;">Welcome to My Top 5!</h1>
-   <ol>
+ 
     {% for name in Fave_food %}
         {% if name == 'Caribbean' %}
-            <li><strong>My top 5 favorite food is {{ name }} and the rest are:</strong> </li>
+         <strong> My top 5 favorite food is {{ name }} and the rest are:</strong> 
         {% else %}
-                <li> {{ name }}</li>
-
+              
         {% endif %}
 
     {% endfor %}
-   </ol>
-
-   <li>Caribbean</li>
-   <li>Japanese</li>
-   <li>Mexican</li>
-   <li>Korean</li>
-   <li>Mediterranean</li>   
+   
 </body>
 </html>
